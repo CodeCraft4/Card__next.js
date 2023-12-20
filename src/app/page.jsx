@@ -17,6 +17,7 @@ const page = () => {
                 boxShadow: "2px 4px 19px gray",
                 borderRadius: 9,
                 textAlign: "center",
+                bgcolor:'orange',
                 p: 3,
               }}
             >
@@ -30,7 +31,7 @@ const page = () => {
               <Typography>{item.title}</Typography>
               <Typography>{item.description}</Typography>
               <Typography>${item.price}</Typography>
-              <Button variant="contained" color="warning">
+              <Button variant="contained" color="secondary">
                 More
               </Button>
             </Grid>
