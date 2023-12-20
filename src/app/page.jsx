@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Container, Grid, Typography } from "@mui/material";
 import { DATA } from "./constant/page";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -19,10 +20,12 @@ const page = () => {
                 p: 3,
               }}
             >
-              <img
+              <Image
                 src={item.img}
                 alt="img"
-                style={{ width: "150px", height: "150px", borderRadius: "50%" }}
+                width={150}
+                height={150}
+                style={{borderRadius:'50%'}}
               />
               <Typography>{item.title}</Typography>
               <Typography>{item.description}</Typography>
